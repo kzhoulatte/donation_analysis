@@ -2,17 +2,12 @@
 # This is the streaming version which outputs when a line is streaming in.
 
 import numpy as np
-#import pandas as pd
 from collections import defaultdict
-#import re
-#from datetime import datetime
 import argparse
 import os
 import time
-#from collections import OrderedDict
 
 print('Hello Insight.')
-#print('Start processing.')
 start_time = time.time()
 
 def valid_date(trans_dt):  
@@ -21,7 +16,6 @@ def valid_date(trans_dt):
     if not (len(trans_dt) == 8):
         valid = 0
     else:
-        #print(int(trans_dt[4:8]),int(trans_dt[0:2]),int(trans_dt[2:4]))
         if int(trans_dt[4:8]) > 2018 or int(trans_dt[4:8]) < 2013:
             valid = 0
         if int(trans_dt[0:2]) > 12 or int(trans_dt[0:2]) < 1:
@@ -32,7 +26,7 @@ def valid_date(trans_dt):
 
 
 def valid_zip(zipcode):
-# Check the valid for zip code.
+# Check for zip code.
     valid = 1
     if len(zipcode) < 5:
         valid = 0
@@ -40,17 +34,16 @@ def valid_zip(zipcode):
 
 
 def valid_name(name):
-# Check the valid for names.
+# Check for names.
     valid = 1
     if len(name) < 1:
         valid = 0
     return valid
 
-
 # CMTE_ID, AMT, OTHER_ID assumed to be easily verified.
 
 def valid_all(donation):  
-# Include all the valid checkings.
+# Include all checkings.
 
     valid = 1
 
