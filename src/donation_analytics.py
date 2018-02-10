@@ -164,7 +164,9 @@ if __name__ == '__main__':
         # O(z) for z zip codes.
             amounts_total = defaultdict(list) # For each zip code and each year.
             zip_num += 1
-            print('zip:'+str(zip_num)+'/'+str(zip_len))
+            
+            if zip_num % 100 == 0: 
+            	print('zip:'+str(zip_num)+'/'+str(zip_len))
 
             i = 0
             amount = 0

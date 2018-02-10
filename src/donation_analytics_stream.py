@@ -189,7 +189,10 @@ if __name__ == '__main__':
         for donars in hash_donars:
             # for each DONAR, get donations.
             i += 1
-            print('donar:'+str(i)+'/'+str(Ntotal))
+
+            if i % 1000 == 0: 
+            	print('donar:'+str(i)+'/'+str(Ntotal))
+            
             #print(donars)
             donations = hash_donars[donars] # Now it is a list
             donations_years = hash_donars_years[donars] # It is a set
