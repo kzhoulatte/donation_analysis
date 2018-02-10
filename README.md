@@ -1,6 +1,8 @@
 
-## Donation Analysis for Insight Data Engineer Code Challenge by Kuan Zhou 
+## Donation Analysis for Insight Data Engineer Code Challenge 
 
-### All informations can be found in:
+###    Owner: Kuan Zhou 
+
+###    All informations including dependencies can be found in:
         ./reports_RepeatDonations.pdf 
 
