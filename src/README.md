@@ -16,13 +16,14 @@ Dependencies:
 
 Contents: 
 	1. donation_analytics.py
+	2. donation_analytics_stream.py
 
 This is the codes I write to analyse the repeat donations as requested. 
 
 	The code can be run with:
 	
 	1. Use ./run.sh commands in ../ directory;
-	2. Use python ./donation_analytics.py ../input/itcont.txt ../input/percentile.txt ../output/repeat_donors.txt in ./src/ directory.
+	2. Use python3 ./donation_analytics.py ../input/itcont.txt ../input/percentile.txt ../output/repeat_donors.txt in ./src/ directory.
 
 	
 repeat_donors.txt in ../output/ are the output file. 
